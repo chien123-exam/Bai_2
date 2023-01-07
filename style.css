@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#header {
+    width: 100%;
+    height: 65px;
+}
+
+header .container {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1240px;
+}
+
+header .logo {
+    width: 25%;
+}
+
+header .logo a {
+    color: rgb(106, 106, 241);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+header .menu {
+    width: 60%;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul a {
+    color: #000;
+    padding: 0px 20px 0px 30px;
+    text-transform: uppercase;
+}
+
+header .menu ul a:hover {
+    color: aquamarine;
+}
+
+header .sidebar-top {
+    display: flex;
+}
+
+header .sidebar-top a {
+    display: block;
+    width: 30px;
+    margin-right: 15px;
+    position: relative;
+}
+
+header .sidebar-top a:nth-child(1) span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -13px;
+    right: -1px;
+    border-radius: 50%;
+    background: #3cb878;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+}
+
+#slider, .slider-item {
+    width: 100%;
+    height: 560px;
+}
+
+.slider-item img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.slider-item {
+    position: relative;
+}
+
+.slider-item h2 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.slider-item h2 small {
+    display: block;
+    color: rgb(104, 104, 234);
+}
+
+#best-seller {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-list li {
+    width: 20%;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.product-list li a {
+    font-size: 1rem;
+    display: block;
+}
+
+.product-list img {
+    max-width: 220px;
+}
+
+.product-list li p {
+    padding-top: 10px;
+}
+
+.product-list li.introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-list li h2 {
+    text-transform: uppercase;
+}
+
+.product-list li small {
+
+}
+
+.product-list li p {
+    font-size: .9rem;
+    max-width: 200px;
+}
+
+.product-list div.buy {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 0px;
+    right: 25px;
+    display: none;
+}
+
+.product-list div.buy a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid;
+    background: red url(./img/buy.png) no-repeat;
+    margin-bottom: 5px;
+}
+
+.product-list li:hover div.buy {
+    display: block;
+}
+
+.product-list div.buy a:nth-child(1) {
+    background-position: 1px 5px;
+}
+
+.product-list div.buy a:nth-child(2) {
+    background-position: 0px -48px;
+}
+
+#shipping {
+    background: #f5f6f9;
+    padding: 50px 0px;
+    margin-top: 60px;
+}
+
+#shipping ul {
+    display: flex;
+}
+
+#shipping ul li {
+    width: 25%;
+    text-align: center;
+}
+
+
+#shipping ul li h2 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+#shipping ul li small {
+    font-size: 13px;
+}
+
+#promotion {
+    background: #2e3348;
+}
+
+#promotion ul {
+    /* display: flex; */
+}
+
+#promotion ul li {
+    /* width: 30%; */
+}
+
+#feature-product h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#feature-product small {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#brands {
+    display: flex;
+    width: 100%;
+}
+
+.discount, .brand {
+    height: 250px;
+    width: 50%;
+}
+
+#brands .discount {
+    background: #2b3042 url(./img/bgform.jpg) no-repeat;
+    text-align: center;
+    background-size: cover;
+}
+
+#brands .discount .text h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#brands .discount .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#brands .discount .text p {
+    max-width: 400px;
+    line-height: 25px;
+    font-size: .8rem;
+    margin-bottom: 30px;
+}
+
+#brands .discount form input {
+    width: 300px;
+    padding: 5px;
+}
+
+#brands .discount form button {
+    background-color: #3cb878;
+    color: white;
+    border: none;
+    padding: 6px;
+}
+
+#brands .brand {
+    background: #f5f6f9;
+    width: 50%;
+}
+
+#brands .brand ul {
+    display: flex;
+    width: 90%%;
+    justify-content: space-between;
+    height: 250px;
+    align-items: center;
+
+}
+
+#brands .brand ul li a {
+    width: 120px;
+    height: 130px;
+    background: url(./img/brand.png) no-repeat;
+    display: block;
+    margin-left: 6px;
+}
+
+#brands .brand ul li:nth-child(2) a {
+    background-position: -233px;
+    width: 130px;
+}
+
+#brands .brand ul li:nth-child(3) a {
+    background-position: -460px;
+    width: 135px;
+}
+
+#brands .brand ul li:nth-child(4) a {
+    background-position: -700px;
+    width: 135px;
+}
+
+#promotion {
+    width: 100%;
+}
+
+#promotion ul {
+    display: flex;
+    justify-content: center;
+}
+
+#promotion ul li {
+    width: 30%;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+#promotion ul li img {
+    width: 80%;
+}
+
+footer {
+    background-color: #000;
+    height: 45px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.f-left, .f-right {
+    width: 50%;
+}
+
+.f-left {
+    text-align: center;
+}
+
+.f-right ul {
+    display: flex;
+    max-width: 300px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.f-right ul li a {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: url(./img/payment.png) no-repeat;
+}
+
+.f-right ul li:nth-child(2) a {
+    background-position: -60px;
+}
+
+.f-right ul li:nth-child(3) a {
+    background-position: -120px;
+}
+
+.f-right ul li:nth-child(4) a {
+    background-position: -180px;
+}
+
+.f-right ul li:nth-child(5) a {
+    background-position: -240px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 996px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+
+    header .logo {
+        width: 75%;
+    }
+
+    header .logo a {
+        text-indent: 15px;
+        display: block;
+    }
+
+    .slide, .slider-item {
+        height: auto;
+    }
+
+    .slider-item h2 {
+        top: 55px;
+        left: 10px;
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+    }
+
+    .product-list li.introduce{
+        width: 100%;
+        align-items: center;
+    }
+
+    .product-list li p {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .product-list li {
+        width: 50%;
+    }
+
+    #best-seller {
+        margin-top: 20px;
+    }
+
+    .product-list img {
+        width: 100%;
+    }
+
+    .product-list li {
+        width: 48%;
+        margin-left: 5px;
+        margin-bottom: 25px;
+    }
+
+    #shipping {
+        padding: 20px 0px;
+    }
+
+    #shipping ul {
+        flex-wrap: wrap;
+    }
+
+    #shipping ul li {
+        width: 50%;
+        min-height: 100px;
+    }
+
+    #shipping ul li:nth-child(3) img {
+        margin-bottom: 15px;
+    }
+
+    #brands {
+        flex-direction: column;
+    }
+
+    .discount, .brand {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    #brands .discount form button {
+        min-width: 300px;
+        margin-top: 10px;
+    }
+
+    /* #brands .discount {
+        height: 300px;
+    } */
+
+    .brand ul {
+        flex-wrap: wrap;
+        width: 200%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        width: 100%;
+    }
+
+    .f-left {
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+    }
+
+    .f-right {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    
+}
+
+
+
+
+
+
+
+
